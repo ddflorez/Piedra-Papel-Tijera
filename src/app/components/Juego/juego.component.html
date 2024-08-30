@@ -1,0 +1,16 @@
+<h2>Selecciona tu movimiento, Jugador 1:</h2>
+<div class="opciones">
+  <img src="assets/piedra.png" alt="Piedra" (click)="enviarMovimiento('Piedra')">
+  <img src="assets/papel.png" alt="Papel" (click)="enviarMovimiento('Papel')">
+  <img src="assets/tijera.png" alt="Tijera" (click)="enviarMovimiento('Tijera')">
+</div>
+
+<div *ngIf="resultadoRonda">
+  <h3>Resultado de la ronda: {{ resultadoRonda.resultado }}</h3>
+  <p>Jugador 1 eligió: {{ resultadoRonda.movimientoJugador1 }}</p>
+  <p>Jugador 2 eligió: {{ resultadoRonda.movimientoJugador2 }}</p>
+</div>
+
+<div *ngIf="error" class="error">
+  <p>{{ error }}</p>
+</div>

@@ -1,0 +1,9 @@
+<form (ngSubmit)="registrarJugadores()">
+  <label for="jugador1">Jugador 1:</label>
+  <input type="text" id="jugador1" [(ngModel)]="jugador1" name="jugador1" required>
+
+  <label for="jugador2">Jugador 2:</label>
+  <input type="text" id="jugador2" [(ngModel)]="jugador2" name="jugador2" required>
+
+  <button type="submit">Registrar y Comenzar Juego</button>
+</form>
